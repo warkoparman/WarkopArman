@@ -105,27 +105,34 @@ nav ul li a:hover{
 
 /* Produk */
 .produk{
-    position:relative;
-    z-index:2;
+    position:absolute;
+    bottom:30px;
+    width:100%;
     display:flex;
     justify-content:center;
     align-items:flex-end;
+    gap:20px;
+    z-index:3;
     flex-wrap:wrap;
-    gap:25px;
-    margin-top:50px;
 }
 
 .item{
     position:relative;
 }
 
-.item img{
-    width:220px;
-    border-radius:20px;
+.item{
+    position:relative;
+    width:180px;
+    transition:.3s;
 }
 
-.item:nth-child(2){
-    transform:translateY(20px);
+.item:hover{
+    transform:translateY(-10px);
+}
+
+.item img{
+    width:100%;
+    object-fit:contain;
 }
 
 /* Harga */
@@ -221,34 +228,34 @@ nav ul li a:hover{
         <p>Kopi, Seblak, Mie Ayam, Bakso & Gorengan</p>
     </div>
 
-    <div class="produk">
+<div class="produk">
 
-        <div class="item">
-            <img src="kopi.png" alt="Kopi">
-            <div class="price">10k</div>
-        </div>
-
-        <div class="item">
-            <img src="seblak.png" alt="Seblak">
-            <div class="price">15k</div>
-        </div>
-
-        <div class="item">
-            <img src="mieayam.png" alt="Mie Ayam">
-            <div class="price">12k</div>
-        </div>
-
-        <div class="item">
-            <img src="bakso.png" alt="Bakso">
-            <div class="price">13k</div>
-        </div>
-
-        <div class="item">
-            <img src="gorengan.png" alt="Gorengan">
-            <div class="price">2k</div>
-        </div>
-
+    <div class="item">
+        <img src="kopi3.png" alt="Kopi">
+        <div class="price">10k</div>
     </div>
+
+    <div class="item">
+        <img src="seblak1.png" alt="Seblak">
+        <div class="price">15k</div>
+    </div>
+
+    <div class="item">
+        <img src="mieayam2.png" alt="Mie Ayam">
+        <div class="price">12k</div>
+    </div>
+
+    <div class="item">
+        <img src="bakso5.png" alt="Bakso">
+        <div class="price">13k</div>
+    </div>
+
+    <div class="item">
+        <img src="gorengan4.png" alt="Gorengan">
+        <div class="price">2k</div>
+    </div>
+
+</div>
 
     <div class="table"></div>
 
